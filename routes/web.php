@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/orders', [App\Http\Controllers\OrdersController::class, 'index']);
+
 Route::get('/', function () {
     return view('welcome');
 });
